@@ -1,0 +1,9 @@
+platform:ios,8.0
+
+target 'LearnGPUImageSimple1' do
+
+
+pod 'GPUImage'
+
+
+end
