@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4E572821FAE50200C5B5D4 /* custom.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E572621FAE50200C5B5D4 /* custom.fsh */; };
+		0F4E572921FAE50200C5B5D4 /* custom.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E572721FAE50200C5B5D4 /* custom.vsh */; };
+		0F4E572F21FAEA2600C5B5D4 /* CameraVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E572E21FAEA2600C5B5D4 /* CameraVideoViewController.m */; };
+		0F4E573621FB0DA100C5B5D4 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E573121FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.m */; };
 		0F8C1B4321F970480075F4CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4221F970480075F4CE /* AppDelegate.m */; };
 		0F8C1B4621F970480075F4CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4521F970480075F4CE /* ViewController.m */; };
 		0F8C1B4921F970480075F4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4721F970480075F4CE /* Main.storyboard */; };
@@ -22,6 +26,12 @@
 
 /* Begin PBXFileReference section */
 		0AF035019FD9754FC13AAA33 /* Pods-LearnGPUImageSimple1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnGPUImageSimple1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnGPUImageSimple1/Pods-LearnGPUImageSimple1.debug.xcconfig"; sourceTree = "<group>"; };
+		0F4E572621FAE50200C5B5D4 /* custom.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = custom.fsh; sourceTree = "<group>"; };
+		0F4E572721FAE50200C5B5D4 /* custom.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = custom.vsh; sourceTree = "<group>"; };
+		0F4E572D21FAEA2600C5B5D4 /* CameraVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraVideoViewController.h; sourceTree = "<group>"; };
+		0F4E572E21FAEA2600C5B5D4 /* CameraVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVideoViewController.m; sourceTree = "<group>"; };
+		0F4E573021FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		0F4E573121FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		0F8C1B3E21F970480075F4CE /* LearnGPUImageSimple1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnGPUImageSimple1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C1B4121F970480075F4CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C1B4221F970480075F4CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +64,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4E573321FB09C400C5B5D4 /* RenderImageTest */ = {
+			isa = PBXGroup;
+			children = (
+				0F8C1B5B21F9AC9B0075F4CE /* RenderImageViewController.h */,
+				0F8C1B5C21F9AC9B0075F4CE /* RenderImageViewController.m */,
+			);
+			path = RenderImageTest;
+			sourceTree = "<group>";
+		};
+		0F4E573421FB09D600C5B5D4 /* CameraFilter */ = {
+			isa = PBXGroup;
+			children = (
+				0F8C1B5E21F9ADC40075F4CE /* CameraFilterViewController.h */,
+				0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */,
+			);
+			path = CameraFilter;
+			sourceTree = "<group>";
+		};
+		0F4E573521FB09FE00C5B5D4 /* CameraVideo */ = {
+			isa = PBXGroup;
+			children = (
+				0F4E572D21FAEA2600C5B5D4 /* CameraVideoViewController.h */,
+				0F4E572E21FAEA2600C5B5D4 /* CameraVideoViewController.m */,
+				0F4E573021FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.h */,
+				0F4E573121FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.m */,
+			);
+			path = CameraVideo;
+			sourceTree = "<group>";
+		};
 		0F8C1B3521F970470075F4CE = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +118,12 @@
 				0F8C1B4221F970480075F4CE /* AppDelegate.m */,
 				0F8C1B4421F970480075F4CE /* ViewController.h */,
 				0F8C1B4521F970480075F4CE /* ViewController.m */,
-				0F8C1B5B21F9AC9B0075F4CE /* RenderImageViewController.h */,
-				0F8C1B5C21F9AC9B0075F4CE /* RenderImageViewController.m */,
-				0F8C1B5E21F9ADC40075F4CE /* CameraFilterViewController.h */,
-				0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */,
+				0F4E573321FB09C400C5B5D4 /* RenderImageTest */,
+				0F4E573421FB09D600C5B5D4 /* CameraFilter */,
+				0F4E573521FB09FE00C5B5D4 /* CameraVideo */,
 				0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */,
+				0F4E572621FAE50200C5B5D4 /* custom.fsh */,
+				0F4E572721FAE50200C5B5D4 /* custom.vsh */,
 				0F8C1B4721F970480075F4CE /* Main.storyboard */,
 				0F8C1B4A21F9705D0075F4CE /* Assets.xcassets */,
 				0F8C1B4C21F9705D0075F4CE /* LaunchScreen.storyboard */,
@@ -172,8 +212,10 @@
 			files = (
 				0F8C1B4E21F9705D0075F4CE /* LaunchScreen.storyboard in Resources */,
 				0F8C1B4B21F9705D0075F4CE /* Assets.xcassets in Resources */,
+				0F4E572821FAE50200C5B5D4 /* custom.fsh in Resources */,
 				0F8C1B4921F970480075F4CE /* Main.storyboard in Resources */,
 				0F8C1B5821F996760075F4CE /* testImg.png in Resources */,
+				0F4E572921FAE50200C5B5D4 /* custom.vsh in Resources */,
 				0F8C1B6221F9B7EC0075F4CE /* CustomShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,11 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4E573621FB0DA100C5B5D4 /* GPUImageBeautifyFilter.m in Sources */,
 				0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */,
 				0F8C1B4621F970480075F4CE /* ViewController.m in Sources */,
 				0F8C1B5121F9705D0075F4CE /* main.m in Sources */,
 				0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */,
 				0F8C1B4321F970480075F4CE /* AppDelegate.m in Sources */,
+				0F4E572F21FAEA2600C5B5D4 /* CameraVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

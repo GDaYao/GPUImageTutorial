@@ -30,13 +30,13 @@
 
 - (NSArray *)dataArr{
     if (!_dataArr) {
-        _dataArr = @[@"GPUImage-读取图片",@"GPUImage-调用相机实时滤镜"];
+        _dataArr = @[@"GPUImage-读取图片",@"GPUImage-调用相机实时滤镜",@"GPUImage-调用相机录制视频"];
     }
     return _dataArr;
 }
 - (NSArray *)vcArr{
     if (!_vcArr) {
-        _vcArr = @[@"RenderImageViewController",@"CameraFilterViewController"];
+        _vcArr = @[@"RenderImageViewController",@"CameraFilterViewController",@"CameraVideoViewController"];
     }
     return _vcArr;
 }
@@ -77,7 +77,16 @@
     NSString *vcStr = self.vcArr[indexPath.row];
     Class class = NSClassFromString(vcStr);
     UIViewController *vc = [[class alloc]init];
+    
+//    UIStoryboard *sb  = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *presentedVC = [sb instantiateViewControllerWithIdentifier:vcStr];
+//    if (presentedVC && vc) {
+//        [self presentViewController:presentedVC animated:YES completion:nil];
+//    }
+    
+    
     [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 
