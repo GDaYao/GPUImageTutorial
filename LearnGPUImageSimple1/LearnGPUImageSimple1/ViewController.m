@@ -30,13 +30,13 @@
 
 - (NSArray *)dataArr{
     if (!_dataArr) {
-        _dataArr = @[@"GPUImage-读取图片",@"GPUImage-调用相机实时滤镜",@"GPUImage-调用相机录制视频"];
+        _dataArr = @[@"GPUImage-读取图片",@"GPUImage-调用相机实时滤镜",@"GPUImage-调用相机录制视频",@"GPUImage-模糊滤镜功能使用"];
     }
     return _dataArr;
 }
 - (NSArray *)vcArr{
     if (!_vcArr) {
-        _vcArr = @[@"RenderImageViewController",@"CameraFilterViewController",@"CameraVideoViewController"];
+        _vcArr = @[@"RenderImageViewController",@"CameraFilterViewController",@"CameraVideoViewController",@"FilterBlurryViewController"];
     }
     return _vcArr;
 }

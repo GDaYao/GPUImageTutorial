@@ -23,9 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    [self cameraVideoInGPUImage];
+    [self cameraVideoInGPUImage] ;
     
 }
 
@@ -47,7 +47,6 @@
     NSURL *movieURL = [NSURL fileURLWithPath:pathToMovie];
     
     self.movieWriter = [[GPUImageMovieWriter alloc] initWithMovieURL:movieURL size:CGSizeMake(640.0, 480.0)];
-    
     self.movieWriter.encodingLiveVideo = YES;
     [self.videoCamera startCameraCapture];
     
@@ -58,11 +57,11 @@
     [beautifyFilter addTarget:self.movieWriter];
     [self.movieWriter startRecording];
     
-    /*   上面-已经显示的录制实时显示   */
+    /*   上面 -- 已经显示的录制实时显示   */
     
     
     
-    /*    下面-可保存录制视频至本地
+    /*    下面 -- 可保存录制视频至本地
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [beautifyFilter removeTarget:self.movieWriter];
         [self.movieWriter finishRecording];

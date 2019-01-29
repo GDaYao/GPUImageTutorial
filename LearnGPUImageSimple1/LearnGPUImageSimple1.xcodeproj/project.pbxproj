@@ -11,6 +11,7 @@
 		0F4E572921FAE50200C5B5D4 /* custom.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E572721FAE50200C5B5D4 /* custom.vsh */; };
 		0F4E572F21FAEA2600C5B5D4 /* CameraVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E572E21FAEA2600C5B5D4 /* CameraVideoViewController.m */; };
 		0F4E573621FB0DA100C5B5D4 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E573121FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.m */; };
+		0F82E7492200058A00E9A075 /* FilterBlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F82E7482200058A00E9A075 /* FilterBlurryViewController.m */; };
 		0F8C1B4321F970480075F4CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4221F970480075F4CE /* AppDelegate.m */; };
 		0F8C1B4621F970480075F4CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4521F970480075F4CE /* ViewController.m */; };
 		0F8C1B4921F970480075F4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C1B4721F970480075F4CE /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 		0F4E572E21FAEA2600C5B5D4 /* CameraVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVideoViewController.m; sourceTree = "<group>"; };
 		0F4E573021FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
 		0F4E573121FAF2BA00C5B5D4 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		0F82E7472200058A00E9A075 /* FilterBlurryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterBlurryViewController.h; sourceTree = "<group>"; };
+		0F82E7482200058A00E9A075 /* FilterBlurryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterBlurryViewController.m; sourceTree = "<group>"; };
 		0F8C1B3E21F970480075F4CE /* LearnGPUImageSimple1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnGPUImageSimple1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8C1B4121F970480075F4CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F8C1B4221F970480075F4CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,15 @@
 			path = CameraVideo;
 			sourceTree = "<group>";
 		};
+		0F82E7462200053700E9A075 /* FilterBlurry */ = {
+			isa = PBXGroup;
+			children = (
+				0F82E7472200058A00E9A075 /* FilterBlurryViewController.h */,
+				0F82E7482200058A00E9A075 /* FilterBlurryViewController.m */,
+			);
+			path = FilterBlurry;
+			sourceTree = "<group>";
+		};
 		0F8C1B3521F970470075F4CE = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 				0F4E573321FB09C400C5B5D4 /* RenderImageTest */,
 				0F4E573421FB09D600C5B5D4 /* CameraFilter */,
 				0F4E573521FB09FE00C5B5D4 /* CameraVideo */,
+				0F82E7462200053700E9A075 /* FilterBlurry */,
 				0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */,
 				0F4E572621FAE50200C5B5D4 /* custom.fsh */,
 				0F4E572721FAE50200C5B5D4 /* custom.vsh */,
@@ -286,6 +299,7 @@
 				0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */,
 				0F8C1B4621F970480075F4CE /* ViewController.m in Sources */,
 				0F8C1B5121F9705D0075F4CE /* main.m in Sources */,
+				0F82E7492200058A00E9A075 /* FilterBlurryViewController.m in Sources */,
 				0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */,
 				0F8C1B4321F970480075F4CE /* AppDelegate.m in Sources */,
 				0F4E572F21FAEA2600C5B5D4 /* CameraVideoViewController.m in Sources */,

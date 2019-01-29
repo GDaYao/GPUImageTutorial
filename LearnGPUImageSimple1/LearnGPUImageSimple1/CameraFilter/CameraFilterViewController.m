@@ -17,20 +17,20 @@
 
 @implementation CameraFilterViewController
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    
-    NSLog(@"log--initWithCoder");
-    
-    return self;
-}
-
-- (void)awakeFromNib{
-    [super awakeFromNib];
-    
-    NSLog(@"log--awakeFromNib");
-    
-}
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+//    self = [super initWithCoder:aDecoder];
+//
+//    NSLog(@"log--initWithCoder");
+//
+//    return self;
+//}
+//
+//- (void)awakeFromNib{
+//    [super awakeFromNib];
+//
+//    NSLog(@"log--awakeFromNib");
+//
+//}
 
 
 - (void)viewDidLoad {
@@ -40,8 +40,6 @@
     NSLog(@"log--viewDidLoad");
     
     [self useCameraFilterInGPUImage];
-    
-    
 
 }
 
@@ -51,22 +49,24 @@
     // 捕获声音
 //    videoCamera.audioEncodingTarget = movieWriter;
     videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait ;
-    
-    GPUImageFilter *customFilter = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"CustomShader"];
-    [videoCamera addTarget:customFilter];
+    videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;  // 正摄像头
     
     
-    GPUImageView *filteredVideoView = [[GPUImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.bounds) ,CGRectGetHeight(self.view.bounds) )];
+    
+    GPUImageView *gpuIV = [[GPUImageView alloc] initWithFrame:self.view.frame];
+    gpuIV.center = self.view.center;
     // 调节fillMode填充模式，改变显示模式。
-    filteredVideoView.fillMode = kGPUImageFillModeStretch;  //kGPUImageFillModePreserveAspectRatioAndFill;
-    
-    
-    [customFilter addTarget:filteredVideoView];
-    
-//    [filter addTarget:filteredVideoView];
-    
-    
+    gpuIV.fillMode = kGPUImageFillModeStretch;  //kGPUImageFillModePreserveAspectRatioAndFill;
+    [self.view addSubview:gpuIV];
+
+
     [videoCamera startCameraCapture];
+
+    
+    GPUImageSepiaFilter *customFilter = [[GPUImageSepiaFilter alloc] init];
+    //GPUImageFilter *customFilter = [[GPUImageFilter alloc] init]; // WithFragmentShaderFromFile:@"CustomShader"
+    [videoCamera addTarget:customFilter];
+    [customFilter addTarget:gpuIV];
     
     
 }

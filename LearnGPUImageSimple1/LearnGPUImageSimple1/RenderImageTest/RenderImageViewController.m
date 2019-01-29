@@ -43,9 +43,6 @@
         self.testIV.image = [filter imageByFilteringImage:image];
     }
     
-    
-    
-    
 }
 
 
