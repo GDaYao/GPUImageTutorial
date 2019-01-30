@@ -3,7 +3,7 @@
 //  LearnGPUImageSimple1
 //
 
-// func: 拍摄视频保存
+// func: 拍摄视频保存 -- 类似美颜滤镜效果
 /**
  GPUImage使用类:
     GPUImageVideoCamera -- 摄像头视频数据流

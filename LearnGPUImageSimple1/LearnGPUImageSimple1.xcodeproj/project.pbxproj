@@ -22,6 +22,7 @@
 		0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5C21F9AC9B0075F4CE /* RenderImageViewController.m */; };
 		0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */; };
 		0F8C1B6221F9B7EC0075F4CE /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */; };
+		0FF953FD2201477800F1FB86 /* CameraVideoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF953FC2201477700F1FB86 /* CameraVideoFilterViewController.m */; };
 		EE0EC1FBA6D2DEA51BE4B10E /* libPods-LearnGPUImageSimple1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D489420E247F02513AB364B /* libPods-LearnGPUImageSimple1.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		0F8C1B5E21F9ADC40075F4CE /* CameraFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFilterViewController.h; sourceTree = "<group>"; };
 		0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFilterViewController.m; sourceTree = "<group>"; };
 		0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CustomShader.fsh; sourceTree = "<group>"; };
+		0FF953FB2201477700F1FB86 /* CameraVideoFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraVideoFilterViewController.h; sourceTree = "<group>"; };
+		0FF953FC2201477700F1FB86 /* CameraVideoFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVideoFilterViewController.m; sourceTree = "<group>"; };
 		3D489420E247F02513AB364B /* libPods-LearnGPUImageSimple1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnGPUImageSimple1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE752DED2DCD31E57D4C82D /* Pods-LearnGPUImageSimple1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnGPUImageSimple1.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnGPUImageSimple1/Pods-LearnGPUImageSimple1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +137,7 @@
 				0F4E573421FB09D600C5B5D4 /* CameraFilter */,
 				0F4E573521FB09FE00C5B5D4 /* CameraVideo */,
 				0F82E7462200053700E9A075 /* FilterBlurry */,
+				0FF953FA220146B900F1FB86 /* CameraVideoFilter */,
 				0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */,
 				0F4E572621FAE50200C5B5D4 /* custom.fsh */,
 				0F4E572721FAE50200C5B5D4 /* custom.vsh */,
@@ -145,6 +149,15 @@
 				0F8C1B5721F996750075F4CE /* testImg.png */,
 			);
 			path = LearnGPUImageSimple1;
+			sourceTree = "<group>";
+		};
+		0FF953FA220146B900F1FB86 /* CameraVideoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				0FF953FB2201477700F1FB86 /* CameraVideoFilterViewController.h */,
+				0FF953FC2201477700F1FB86 /* CameraVideoFilterViewController.m */,
+			);
+			path = CameraVideoFilter;
 			sourceTree = "<group>";
 		};
 		7E2649D2027EB86530C8F7F0 /* Pods */ = {
@@ -298,6 +311,7 @@
 				0F4E573621FB0DA100C5B5D4 /* GPUImageBeautifyFilter.m in Sources */,
 				0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */,
 				0F8C1B4621F970480075F4CE /* ViewController.m in Sources */,
+				0FF953FD2201477800F1FB86 /* CameraVideoFilterViewController.m in Sources */,
 				0F8C1B5121F9705D0075F4CE /* main.m in Sources */,
 				0F82E7492200058A00E9A075 /* FilterBlurryViewController.m in Sources */,
 				0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */,
