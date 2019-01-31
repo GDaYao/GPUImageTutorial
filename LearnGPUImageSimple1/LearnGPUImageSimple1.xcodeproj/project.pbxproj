@@ -22,6 +22,9 @@
 		0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5C21F9AC9B0075F4CE /* RenderImageViewController.m */; };
 		0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */; };
 		0F8C1B6221F9B7EC0075F4CE /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */; };
+		0FBE1AEA22028BDE0050E914 /* CameraMovieFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE1AE922028BDE0050E914 /* CameraMovieFilterViewController.m */; };
+		0FBE1AEC2202D9A00050E914 /* play.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0FBE1AEB220292EC0050E914 /* play.mp4 */; };
+		0FBE1AF12202F6EC0050E914 /* CameraWaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE1AF02202F6EC0050E914 /* CameraWaterMarkViewController.m */; };
 		0FF953FD2201477800F1FB86 /* CameraVideoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF953FC2201477700F1FB86 /* CameraVideoFilterViewController.m */; };
 		EE0EC1FBA6D2DEA51BE4B10E /* libPods-LearnGPUImageSimple1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D489420E247F02513AB364B /* libPods-LearnGPUImageSimple1.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,11 @@
 		0F8C1B5E21F9ADC40075F4CE /* CameraFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFilterViewController.h; sourceTree = "<group>"; };
 		0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFilterViewController.m; sourceTree = "<group>"; };
 		0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CustomShader.fsh; sourceTree = "<group>"; };
+		0FBE1AE822028BDE0050E914 /* CameraMovieFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMovieFilterViewController.h; sourceTree = "<group>"; };
+		0FBE1AE922028BDE0050E914 /* CameraMovieFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraMovieFilterViewController.m; sourceTree = "<group>"; };
+		0FBE1AEB220292EC0050E914 /* play.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = play.mp4; sourceTree = "<group>"; };
+		0FBE1AEF2202F6EC0050E914 /* CameraWaterMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraWaterMarkViewController.h; sourceTree = "<group>"; };
+		0FBE1AF02202F6EC0050E914 /* CameraWaterMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraWaterMarkViewController.m; sourceTree = "<group>"; };
 		0FF953FB2201477700F1FB86 /* CameraVideoFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraVideoFilterViewController.h; sourceTree = "<group>"; };
 		0FF953FC2201477700F1FB86 /* CameraVideoFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVideoFilterViewController.m; sourceTree = "<group>"; };
 		3D489420E247F02513AB364B /* libPods-LearnGPUImageSimple1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnGPUImageSimple1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +146,8 @@
 				0F4E573521FB09FE00C5B5D4 /* CameraVideo */,
 				0F82E7462200053700E9A075 /* FilterBlurry */,
 				0FF953FA220146B900F1FB86 /* CameraVideoFilter */,
+				0FBE1AE722028AF00050E914 /* CameraMovieFilter */,
+				0FBE1AEE2202F6300050E914 /* CameraWaterMark */,
 				0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */,
 				0F4E572621FAE50200C5B5D4 /* custom.fsh */,
 				0F4E572721FAE50200C5B5D4 /* custom.vsh */,
@@ -147,8 +157,27 @@
 				0F8C1B4F21F9705D0075F4CE /* Info.plist */,
 				0F8C1B5021F9705D0075F4CE /* main.m */,
 				0F8C1B5721F996750075F4CE /* testImg.png */,
+				0FBE1AEB220292EC0050E914 /* play.mp4 */,
 			);
 			path = LearnGPUImageSimple1;
+			sourceTree = "<group>";
+		};
+		0FBE1AE722028AF00050E914 /* CameraMovieFilter */ = {
+			isa = PBXGroup;
+			children = (
+				0FBE1AE822028BDE0050E914 /* CameraMovieFilterViewController.h */,
+				0FBE1AE922028BDE0050E914 /* CameraMovieFilterViewController.m */,
+			);
+			path = CameraMovieFilter;
+			sourceTree = "<group>";
+		};
+		0FBE1AEE2202F6300050E914 /* CameraWaterMark */ = {
+			isa = PBXGroup;
+			children = (
+				0FBE1AEF2202F6EC0050E914 /* CameraWaterMarkViewController.h */,
+				0FBE1AF02202F6EC0050E914 /* CameraWaterMarkViewController.m */,
+			);
+			path = CameraWaterMark;
 			sourceTree = "<group>";
 		};
 		0FF953FA220146B900F1FB86 /* CameraVideoFilter */ = {
@@ -236,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBE1AEC2202D9A00050E914 /* play.mp4 in Resources */,
 				0F8C1B4E21F9705D0075F4CE /* LaunchScreen.storyboard in Resources */,
 				0F8C1B4B21F9705D0075F4CE /* Assets.xcassets in Resources */,
 				0F4E572821FAE50200C5B5D4 /* custom.fsh in Resources */,
@@ -308,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBE1AEA22028BDE0050E914 /* CameraMovieFilterViewController.m in Sources */,
+				0FBE1AF12202F6EC0050E914 /* CameraWaterMarkViewController.m in Sources */,
 				0F4E573621FB0DA100C5B5D4 /* GPUImageBeautifyFilter.m in Sources */,
 				0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */,
 				0F8C1B4621F970480075F4CE /* ViewController.m in Sources */,
