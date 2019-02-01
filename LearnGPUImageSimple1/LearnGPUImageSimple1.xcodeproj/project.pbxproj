@@ -22,6 +22,7 @@
 		0F8C1B5D21F9AC9B0075F4CE /* RenderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5C21F9AC9B0075F4CE /* RenderImageViewController.m */; };
 		0F8C1B6021F9ADC40075F4CE /* CameraFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */; };
 		0F8C1B6221F9B7EC0075F4CE /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */; };
+		0FBD10D12203F92300CCFD80 /* watermark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBD10D02203F92300CCFD80 /* watermark.png */; };
 		0FBE1AEA22028BDE0050E914 /* CameraMovieFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE1AE922028BDE0050E914 /* CameraMovieFilterViewController.m */; };
 		0FBE1AEC2202D9A00050E914 /* play.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0FBE1AEB220292EC0050E914 /* play.mp4 */; };
 		0FBE1AF12202F6EC0050E914 /* CameraWaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBE1AF02202F6EC0050E914 /* CameraWaterMarkViewController.m */; };
@@ -55,6 +56,7 @@
 		0F8C1B5E21F9ADC40075F4CE /* CameraFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFilterViewController.h; sourceTree = "<group>"; };
 		0F8C1B5F21F9ADC40075F4CE /* CameraFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFilterViewController.m; sourceTree = "<group>"; };
 		0F8C1B6121F9B7EC0075F4CE /* CustomShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CustomShader.fsh; sourceTree = "<group>"; };
+		0FBD10D02203F92300CCFD80 /* watermark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watermark.png; sourceTree = "<group>"; };
 		0FBE1AE822028BDE0050E914 /* CameraMovieFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMovieFilterViewController.h; sourceTree = "<group>"; };
 		0FBE1AE922028BDE0050E914 /* CameraMovieFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraMovieFilterViewController.m; sourceTree = "<group>"; };
 		0FBE1AEB220292EC0050E914 /* play.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = play.mp4; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				0F8C1B5021F9705D0075F4CE /* main.m */,
 				0F8C1B5721F996750075F4CE /* testImg.png */,
 				0FBE1AEB220292EC0050E914 /* play.mp4 */,
+				0FBD10D02203F92300CCFD80 /* watermark.png */,
 			);
 			path = LearnGPUImageSimple1;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBE1AEC2202D9A00050E914 /* play.mp4 in Resources */,
+				0FBD10D12203F92300CCFD80 /* watermark.png in Resources */,
 				0F8C1B4E21F9705D0075F4CE /* LaunchScreen.storyboard in Resources */,
 				0F8C1B4B21F9705D0075F4CE /* Assets.xcassets in Resources */,
 				0F4E572821FAE50200C5B5D4 /* custom.fsh in Resources */,
